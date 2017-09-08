@@ -20,9 +20,14 @@ num_str1 = input('Please enter an integer: ')
 int_var = int(num_str1)
 
 while (int_var != answer):
-    print('try again')
-    print(p)
-    num_str1 = input('Please enter an integer (hundreds digit): ')
+    if int_var > answer:
+        print('try again, answer is lower')  
+        print(p)
+        num_str1 = input('Please enter an integer: ')
+    elif int_var < answer:
+        print('try again, the answer is higher')
+        print(p)
+        num_str1 = input('Please enter an integer: ')
     
 input('You WIN!!')
 
