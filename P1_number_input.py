@@ -23,12 +23,10 @@ while (int_var != answer):
     if int_var > answer:
         print('try again, answer is lower')  
         print(p)
-        num_str1 = input('Please enter an integer: ')
     elif int_var < answer:
         print('try again, the answer is higher')
         print(p)
-        num_str1 = input('Please enter an integer: ')
-    
+    num_str1 = input('Please enter an integer: ')
 input('You WIN!!')
 
     
