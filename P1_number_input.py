@@ -1,32 +1,37 @@
-# first program in python
-# input two numbers, add them together, print them out
-# wfp, 9/1/07; rje, 5/5/14
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep  7 23:34:22 2017
+
+@author: user
+"""
+""" this is just the draft"""
+# Group 7
+# Reyes Ceballos and Sen Varghese
+# 9/22/2017
+# Homework 1
+# I am a three-digit number.
+# My tens digit is 5 more than my ones digit.
+# My hundreds digit is 8 less than my tens digit.
+# What number am I?
 
 
-# defining the answer
 answer = 194
 
-#start game
-p =  '\n\
-I am a three-digit number.\n\
-My tens digit is 5 more than my ones digit.\n\
-My hundreds digit is 8 less than my tens digit.\n\
-What number am I?\n\
-'
+# starts the game
+#Question
 
-print(p)
+guess = eval(input('Please enter an integer: '))
+ 
+if guess == answer:
+    print('That is correct! You win! ')
+if guess != answer:
+    print('Wrong! You lose!')
+if guess < answer:
+    print('Guess higher next time!')
+if guess > answer:
+    print('Guess lower next time!')
+    
+print('Goodbye ')
 
-num_str1 = input('Please enter an integer: ')
-int_var = int(num_str1)
-
-while (int_var != answer):
-    if int_var > answer:
-        print('try again, answer is lower')  
-        print(p)
-    elif int_var < answer:
-        print('try again, the answer is higher')
-        print(p)
-    num_str1 = input('Please enter an integer: ')
-input('You WIN!!')
-
+# End of game. Re-run to play again.
     
